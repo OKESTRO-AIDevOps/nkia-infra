@@ -1,0 +1,97 @@
+target.v1:
+- gitPackage: 
+    address: 'https://github.com/OKESTRO-AIDevOps/nkia-nokubeadm.git'
+    name: nkia-nokubeadm
+    strategy: reset 
+    lock: []
+  root: "nkia"
+  select:
+  - what: 
+      - "*" 
+    from: "nokubeadm"
+    not: [] 
+    as: "*" # * means selected files will be located directly inside the package
+- gitPackage: 
+    address: 'https://github.com/OKESTRO-AIDevOps/nkia-nokubectl.git'
+    name: nkia-nokubectl
+    strategy: reset 
+    lock: []
+  root: "nkia"
+  select:
+  - what: 
+      - "*" 
+    from: "nokubectl"
+    not: [] 
+    as: "*" # * means selected files will be located directly inside the package
+- gitPackage: 
+    address: 'https://github.com/OKESTRO-AIDevOps/nkia-nokubelet.git'
+    name: nkia-nokubelet
+    strategy: reset 
+    lock: []
+  root: "nkia"
+  select:
+  - what: 
+      - "*" 
+    from: "nokubelet"
+    not: [] 
+    as: "*" # * means selected files will be located directly inside the package
+- gitPackage: 
+    address: 'https://github.com/OKESTRO-AIDevOps/nkia-orch.io.git'
+    name: nkia-orch.io
+    strategy: reset 
+    lock: []
+  root: "nkia"
+  select:
+  - what: 
+      - "*" 
+    from: "orch.io"
+    not: [] 
+    as: "*" # * means selected files will be located directly inside the package
+- gitPackage: 
+    address: 'https://github.com/OKESTRO-AIDevOps/nkia-pkg.git'
+    name: nkia-pkg
+    strategy: reset 
+    lock: []
+  root: "nkia"
+  select:
+  - what: 
+      - "*" 
+    from: "pkg"
+    not: [] 
+    as: "*" # * means selected files will be located directly inside the package
+- gitPackage: 
+    address: 'https://github.com/OKESTRO-AIDevOps/nkia-infra.git'
+    name: nkia-infra
+    strategy: reset 
+    lock: []
+  root: "nkia"
+  select:
+  - what: 
+      - "*" 
+    from: "infra"
+    not: [] 
+    as: "*" # * means selected files will be located directly inside the package
+- gitPackage: 
+    address: 'https://github.com/OKESTRO-AIDevOps/nkia-hack.git'
+    name: nkia-hack
+    strategy: reset 
+    lock: []
+  root: "nkia"
+  select:
+  - what: 
+      - "*" 
+    from: "hack"
+    not: [] 
+    as: "*" # * means selected files will be located directly inside the package
+- gitPackage: 
+    address: 'https://github.com/OKESTRO-AIDevOps/nkia-doc.git'
+    name: nkia-doc
+    strategy: reset 
+    lock: []
+  root: "nkia"
+  select:
+  - what: 
+      - "*" 
+    from: "doc"
+    not: [] 
+    as: "*" # * means selected files will be located directly inside the package
